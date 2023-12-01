@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Viz Final Project</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+  <form id="filterBox">
+    <label>Filter by: <br><br></label>
+    <div>
+      <label>
+        <input type="radio" name="filter" value="Cases" checked> Cases
+      </label>
+    </div>
+
+    <div>
+      <label>
+        <input type="radio" name="filter" value="Deaths"> Deaths
+      </label>
+    </div>
+
+    <div>
+      <label>
+        <input type="radio" name="filter" value="Exposures"> Exposures
+      </label>
+    </div>
+
+    <div>
+      <label>
+        <input type="radio" name="filter" value="Hospitalizations"> Hospitalizations
+      </label>
+    </div>
+
+    <div>
+      <label>
+        <input type="radio" name="filter" value="ICU"> ICU
+      </label>
+    </div>
+
+    <div>
+      <label>
+        <input type="radio" name="filter" value="Underlying_Cond"> Underlying_Cond
+      </label>
+    </div>
+
+    <div>
+      <label>
+        <input type="radio" name="filter" value="Month [cases]"> Month [cases]
+        <select id="dateFilter" name="dateFilter">
+          <option value="2020-01">2020-01</option>
+          <option value="2020-02">2020-02</option>
+          <option value="2020-03">2020-03</option>
+          <option value="2020-04">2020-04</option>
+          <option value="2020-05">2020-05</option>
+          <option value="2020-06">2020-06</option>
+          <option value="2020-07">2020-07</option>
+          <option value="2020-08">2020-08</option>
+          <option value="2020-09">2020-09</option>
+          <option value="2020-10">2020-10</option>
+          <option value="2020-11">2020-11</option>
+          <option value="2020-12">2020-12</option>
+          <option value="2021-01">2021-01</option>
+          <option value="2021-02">2021-02</option>
+          <option value="2021-03">2021-03</option>
+          <option value="2021-04">2021-04</option>
+          <option value="2021-05">2021-05</option>
+          <option value="2021-06">2021-06</option>
+          <option value="2021-07">2021-07</option>
+          <option value="2021-08">2021-08</option>
+          <option value="2021-09">2021-09</option>
+          <option value="2021-10">2021-10</option>
+          <option value="2021-11">2021-11</option>
+          <option value="2021-12">2021-12</option>
+          <option value="2022-01">2022-01</option>
+          <option value="2022-02">2022-02</option>
+          <option value="2022-03">2022-03</option>
+          <option value="2022-04">2022-04</option>
+          <option value="2022-05">2022-05</option>
+          <option value="2022-06">2022-06</option>
+          <option value="2022-07">2022-07</option>
+          <option value="2022-08">2022-08</option>
+          <option value="2022-09">2022-09</option>
+          <option value="2022-10">2022-10</option>
+          <option value="2022-11">2022-11</option>
+          <option value="2022-12">2022-12</option>
+          <option value="2023-01">2023-01</option>
+          <option value="2023-02">2023-02</option>
+          <option value="2023-03">2023-03</option>
+          <option value="2023-04">2023-04</option>
+          <option value="2023-05">2023-05</option>
+          <option value="2023-06">2023-06</option>
+          <option value="2023-07">2023-07</option>
+          <option value="2023-08">2023-08</option>
+          
+
+
+      </select>
+
+      </label>
+    </div>
+
+  </form>
+
+  <h3 id="names">
+    CS5630 Visualization for Data Science [Instr. Paul Rosen]<br>
+    <br>
+    Joshua Tlatelpa-Agustin [u1399218]<br>
+    Kian Akhiary [u1201865] <br><br>
+    <a href="https://www.youtube.com/watch?v=_zHCV__u92Q&ab_channel=JOSHUATLATELPA-AGUSTIN">Presentation Video</a>
+
+    <br>
+  </h3>
+
+  <h1 id="titleMap">Covid Map [2020-2023]</h1>
+
+
+
+  <div id="map"></div>
+  <div id="total"> </div>
+
+
+  <div id="mapLegend"></div>
+
+  <h3 id="lineChartParagraph">In the ongoing narrative of the global
+    response to the COVID-19 pandemic, vaccine hesitancy has emerged
+    as a distinctive and impactful societal phenomenon. As the world
+    contends with the multifaceted challenges posed by the virus, understanding
+    public attitudes toward vaccination becomes crucial. The year 2019,
+    while pre-dating the direct impact of the pandemic, serves as a baseline
+    for the inception of vaccine hesitancy statistics. Even without the specific
+    context of COVID-19, these figures present a foundation for grasping the broader
+    landscape of public health attitudes leading up to the pandemic's outbreak.
+    Limited studies from the CDC in 2019 provide an early glimpse into the complexities
+    of vaccine hesitancy, offering valuable insights into societal perceptions that have
+    undoubtedly influenced the ongoing vaccination campaigns. This data, though predating
+    the COVID-19 era, becomes a lens through which we can begin to fathom the evolving
+    dynamics of public opinion regarding vaccines, setting the stage for a more
+    comprehensive understanding of the challenges faced during this critical juncture in
+    global health. </h3>
+
+  <h1 id="titleLineGraph">Vaccine Hesitancy Bar Chart (2019)</h1>
+
+
+  <div id="bar-chart"></div>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
+<style>
+  .line {
+    fill: none;
+    stroke: red;
+    stroke-width: 2;
+  }
+
+  .axis {
+    font-family: 'Arial, sans-serif';
+    font-size: 10px;
+  }
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+  }
+
+  #line-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #names {
+
+    font-weight: normal;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 20px;
+  }
+
+  #lineChartParagraph {
+
+    font-weight: normal;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 20px;
+  }
+
+
+  #titleMap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #titleLineGraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #mapLegend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #filterBox {
+    display: flex;
+    margin-right: 100px;
+    margin-top: 100px;
+    border: 2px solid black;
+    padding: 10px;
+    display: inline-block;
+   position: absolute;
+    right: 00px;
+    top: 100px;
+  }
+  #total {
+
+    border: 1px solid black;
+    padding: 10px;
+    display: inline-block;
+    position: absolute;
+    right: 150px;
+    top: 450px;
+  }
+</style>

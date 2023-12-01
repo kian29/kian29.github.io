@@ -1,0 +1,214 @@
+[
+  {
+    "State": "AK",
+    "Total_Cases": 5821
+  },
+  {
+    "State": "AL",
+    "Total_Cases": 6006
+  },
+  {
+    "State": "AR",
+    "Total_Cases": 3997
+  },
+  {
+    "State": "AZ",
+    "Total_Cases": 13842
+  },
+  {
+    "State": "CA",
+    "Total_Cases": 142160
+  },
+  {
+    "State": "CO",
+    "Total_Cases": 36766
+  },
+  {
+    "State": "CT",
+    "Total_Cases": 61
+  },
+  {
+    "State": "DC",
+    "Total_Cases": 2569
+  },
+  {
+    "State": "DE",
+    "Total_Cases": 4588
+  },
+  {
+    "State": "FL",
+    "Total_Cases": 57814
+  },
+  {
+    "State": "GA",
+    "Total_Cases": 16794
+  },
+  {
+    "State": "GU",
+    "Total_Cases": 1551
+  },
+  {
+    "State": "HI",
+    "Total_Cases": 3717
+  },
+  {
+    "State": "IA",
+    "Total_Cases": 18
+  },
+  {
+    "State": "ID",
+    "Total_Cases": 1759
+  },
+  {
+    "State": "IL",
+    "Total_Cases": 105851
+  },
+  {
+    "State": "IN",
+    "Total_Cases": 11693
+  },
+  {
+    "State": "KS",
+    "Total_Cases": 6304
+  },
+  {
+    "State": "KY",
+    "Total_Cases": 10733
+  },
+  {
+    "State": "LA",
+    "Total_Cases": 5210
+  },
+  {
+    "State": "MA",
+    "Total_Cases": 65598
+  },
+  {
+    "State": "MD",
+    "Total_Cases": 55194
+  },
+  {
+    "State": "ME",
+    "Total_Cases": 11124
+  },
+  {
+    "State": "MI",
+    "Total_Cases": 100498
+  },
+  {
+    "State": "MN",
+    "Total_Cases": 28013
+  },
+  {
+    "State": "MO",
+    "Total_Cases": 11884
+  },
+  {
+    "State": "MS",
+    "Total_Cases": 61
+  },
+  {
+    "State": "MT",
+    "Total_Cases": 441
+  },
+  {
+    "State": "NC",
+    "Total_Cases": 37261
+  },
+  {
+    "State": "ND",
+    "Total_Cases": 1372
+  },
+  {
+    "State": "NE",
+    "Total_Cases": 8020
+  },
+  {
+    "State": "NH",
+    "Total_Cases": 9004
+  },
+  {
+    "State": "NJ",
+    "Total_Cases": 67080
+  },
+  {
+    "State": "NM",
+    "Total_Cases": 4729
+  },
+  {
+    "State": "NV",
+    "Total_Cases": 6841
+  },
+  {
+    "State": "NY",
+    "Total_Cases": 187707
+  },
+  {
+    "State": "OH",
+    "Total_Cases": 27765
+  },
+  {
+    "State": "OK",
+    "Total_Cases": 926
+  },
+  {
+    "State": "OR",
+    "Total_Cases": 22114
+  },
+  {
+    "State": "PA",
+    "Total_Cases": 42192
+  },
+  {
+    "State": "PR",
+    "Total_Cases": 5191
+  },
+  {
+    "State": "RI",
+    "Total_Cases": 17456
+  },
+  {
+    "State": "SC",
+    "Total_Cases": 8636
+  },
+  {
+    "State": "SD",
+    "Total_Cases": 1329
+  },
+  {
+    "State": "TN",
+    "Total_Cases": 9745
+  },
+  {
+    "State": "TX",
+    "Total_Cases": 73594
+  },
+  {
+    "State": "UT",
+    "Total_Cases": 5692
+  },
+  {
+    "State": "VA",
+    "Total_Cases": 32953
+  },
+  {
+    "State": "VI",
+    "Total_Cases": 716
+  },
+  {
+    "State": "VT",
+    "Total_Cases": 13113
+  },
+  {
+    "State": "WA",
+    "Total_Cases": 40156
+  },
+  {
+    "State": "WI",
+    "Total_Cases": 41246
+  },
+  {
+    "State": "WY",
+    "Total_Cases": 684
+  }
+]

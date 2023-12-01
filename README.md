@@ -1,0 +1,5 @@
+Video - https://www.youtube.com/watch?v=_zHCV__u92Q
+
+For our project, we did COVID visualizations. One of our visualizations was a heatmap of America. There are also filters that allow the user to change what the heatmap is showing, they can change it from cases to deaths, hospitalizations, etc. Everytime the user adjusts the filters, the heatmap adjusts to what the user selected. When the user hovers over a state, the state name shows up with the total amount of whatever the user is filtering. Also, a pie chart shows up that shows that states cases in relation to the entire country, this helps the user better understand the ratio of that state verse the entire country. We also have a bar chart that displays the vaccine hesitancy rates of every state from 2019.
+
+All the code in our repository is our own. We had to deal create code that cleaned the massive dataset we were dealing with and make it a size that can be easily processed on our website. The visualizations as well all used D3 to visualize the data.
